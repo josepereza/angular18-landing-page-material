@@ -1,5 +1,5 @@
 .hero-section {
-    height: 80vh;
+    height: 100vh;
     min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('/desk1.jpg');
@@ -17,7 +17,7 @@
   
       h1 {
         margin-bottom: 1rem;
-        font-weight: 900;
+        font-weight: 600;
       }
   
       h2 {
