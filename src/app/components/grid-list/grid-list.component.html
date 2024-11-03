@@ -9,7 +9,7 @@
     </mat-chip-listbox>
   </div>
 
-  <mat-grid-list [cols]="cols$ | async" rowHeight="1:1.5" gutterSize="16">
+  <mat-grid-list [cols]="cols$ | async" rowHeight="1:1.5" gutterSize="16" >
     @for (product of filteredProducts; track product.id) {
     <mat-grid-tile>
       <app-card
