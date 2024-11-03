@@ -3,13 +3,16 @@
     
     <mat-card-content>
       <mat-chip-set>
-        <mat-chip color="primary" selected>{{product.category}}</mat-chip>
+        <mat-chip [ngStyle]="{'background-color': '#8fd0ec'}" selected>{{product.category}}</mat-chip>
         @if (product.inStock) {
-          <mat-chip color="accent" selected>En Stock</mat-chip>
+          <mat-chip [ngStyle]="{'background-color': 'green'}"selected>En Stock</mat-chip>
+        }@else {
+          <mat-chip [ngStyle]="{'background-color': 'orange'}"selected>no Stock</mat-chip>
+
         }
       </mat-chip-set>
       
-      <h2 class="mat-h2">{{product.name}}</h2>
+      <h4 >{{product.name}}</h4>
       <p>{{product.description}}</p>
       
       <div class="rating">
@@ -25,9 +28,9 @@
       <span class="price">${{product.price}}</span>
       <button 
         mat-raised-button 
-        color="primary"
+        [ngStyle]="{'background-color': '#8fd0ec'}"
         (click)="addToCart.emit(product)">
-        <mat-icon>add_shopping_cart</mat-icon>
+        <mat-icon [ngStyle]="{'color': 'red'}" >add_shopping_cart</mat-icon>
         Añadir
       </button>
     </mat-card-actions>

@@ -36,9 +36,9 @@ export class ProductService {
       price: 299.99,
       imageUrl: 'labtop2.png',
       category: 'Standard',
-      rating: 4.8,
+      rating: 2.8,
       features: ['Característica 1', 'Característica 2', 'Característica 3'],
-      inStock: true
+      inStock: false
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ export class ProductService {
       price: 299.99,
       imageUrl: 'laptop1.jpg',
       category: 'Standard',
-      rating: 4.8,
+      rating: 1.8,
       features: ['Característica 1', 'Característica 2', 'Característica 3'],
       inStock: true
     },
